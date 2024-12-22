@@ -3,50 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registre i Exercicis</title>
+    <title>Inici de Sessió i Exercicis</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <!-- Formulari de registre -->
-        <div id="formulari-registre" class="formulari">
-            <h1>Registra't</h1>
-            <input type="text" id="registreNom" placeholder="Nom" required>
-            <input type="text" id="registreCognoms" placeholder="Cognoms" required>
-            <input type="date" id="registreDataNaixement" required>
-            <input type="email" id="registreCorreu" placeholder="Correu electrònic" required>
-            <input type="password" id="registreContrasenya" placeholder="Contrasenya" required>
-            <button onclick="registrar()">Registrar-se</button>
-            <p><a href="#" onclick="mostrarIniciSessio()">Ja tens un compte? Inicia sessió</a></p>
-        </div>
-
         <!-- Formulari d'inici de sessió -->
-        <div id="formulari-inici-sessio" class="formulari" style="display: none;">
+        <div id="formulari-inici-sessio" class="formulari">
             <h1>Inicia Sessió</h1>
-            <input type="text" id="iniciNom" placeholder="Nom" required>
+            <input type="text" id="iniciNom" placeholder="Nom d'usuari" required>
             <input type="email" id="iniciCorreu" placeholder="Correu electrònic" required>
             <input type="password" id="iniciContrasenya" placeholder="Contrasenya" required>
             <button onclick="iniciarSessio()">Inicia Sessió</button>
-            <p><a href="#" onclick="mostrarRegistre()">Encara no tens un compte? Registra't</a></p>
-        </div>
-
-        <!-- Secció d'exercicis -->
-        <div id="exercicis" style="display: none;">
-            <h1>Exercicis per Matèries</h1>
-            <div class="quadrat">
-                <div id="pregunta"></div>
-                <input type="text" id="respostaUsuari" placeholder="Escriu la teva resposta">
-                <button onclick="comprovarResposta()">Comprova</button>
-            </div>
-            <div class="botons-materia">
-                <button onclick="mostrarPregunta('matematiques')">Matemàtiques</button>
-                <button onclick="mostrarPregunta('catala')">Català</button>
-                <button onclick="mostrarPregunta('castella')">Castellà</button>
-                <button onclick="mostrarPregunta('medi')">Medi</button>
-                <button onclick="mostrarPregunta('angles')">Anglès</button>
-                <button onclick="mostrarPregunta('programacio')">Programació</button>
-            </div>
-            <button onclick="tancarSessio()">Tanca Sessió</button>
         </div>
     </div>
 
