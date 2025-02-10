@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar Sessió / Registrar-se</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 id="formTitle">Iniciar Sessió</h2>
+
+      <!-- Formulari per iniciar sessió o registrar-se -->
+      <form id="authForm">
+        <input type="text" id="username" placeholder="Usuari" required />
+        <input
+          type="password"
+          id="password"
+          placeholder="Contrasenya"
+          required
+        />
+        <button type="submit" id="actionButton">Entrar</button>
+      </form>
+
+      <p id="errorMessage"></p>
+
+      <!-- Enllaços per canviar entre registre i login -->
+      <a href="#" id="switchForm">Vols crear un compte? Registra't aquí.</a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
